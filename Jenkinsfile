@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'xx'
+    }
+
+  }
   stages {
     stage('error') {
       steps {
